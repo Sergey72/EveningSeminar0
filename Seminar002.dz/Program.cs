@@ -20,6 +20,24 @@
 // Console.WriteLine(SecondNumber(number1));
 
 
+int Prompt(string message)
+{
+  System.Console.Write(message);
+  string value = Console.ReadLine();
+  int result = Convert.ToInt32(value);
+  return result;
+}
+
+int number = Prompt("Введите трехзначное число > ");
+if (number < 100 || number >= 1000)
+{
+  Console.WriteLine("Вы ввели не трехзначное число, пожалуйста повторите ввод");
+  return;
+}
+Console.WriteLine($"Введенное число '{number}'");
+int secondRank = number / 10 % 10;
+Console.WriteLine($"Вторая цифра '{secondRank}'");
+
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
 // 645 -> 5
@@ -51,23 +69,23 @@ else
 // 7 -> да
 // 1 -> нет
 
-bool DayWeek(int day)
-{
-  int week1 = 6;
-  int week2 = 7;
+// bool DayWeek(int day)
+// {
+//   int week1 = 6;
+//   int week2 = 7;
 
-  if ((day == week1) || (day == week2))
-  {
-    return true;
-  }
-  else
-  {
-    return false; 
-  }
-}
-Console.Write("Введи цифру дня недели: ");
-int number = Convert.ToInt32(Console.ReadLine());
-if(DayWeek(number) == true)
-Console.WriteLine("Да, этот день выходной.");
-else
-Console.WriteLine("Нет, этот день не выходной.");
+//   if ((day == week1) || (day == week2))
+//   {
+//     return true;
+//   }
+//   else
+//   {
+//     return false; 
+//   }
+// }
+// Console.Write("Введи цифру дня недели: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// if(DayWeek(number) == true)
+// Console.WriteLine("Да, этот день выходной.");
+// else
+// Console.WriteLine("Нет, этот день не выходной.");
