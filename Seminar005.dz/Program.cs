@@ -71,12 +71,12 @@
 
 double[] FillArray(int size)
 {
-  double[] array = new double[size];
-  Random rnd = new Random();
+  double[] array = new double[size];   //Выделение памяти для массива.
+  Random rnd = new Random();           //Выделение памяти для случайного числа.
   for (int i = 0; i < array.Length; i++)
   {
-    array[i] = rnd.NextDouble() * 10;
-    array[i] = (Math.Round(array[i], 1));
+    array[i] = rnd.NextDouble() * 10;    //Получение случайного дробного числа со значением больше единицы.
+    array[i] = (Math.Round(array[i], 1));    //Сокращение элементов в дробной части числа после запятой до десятой.
   }
   return array;
 }
@@ -84,7 +84,7 @@ double[] FillArray(int size)
 System.Console.WriteLine("Введите размер массива: ");
 int number = Convert.ToInt32(Console.ReadLine());
 double[] array = FillArray(number);
-System.Console.Write($"[{string.Join("; ", array)}] -> ");
+System.Console.Write($"[{string.Join("; ", array)}] -> "); //Метод для вывода массива на экран.
 
 
 
@@ -97,16 +97,16 @@ while (i < number)
 {
   if (max < array[i])
   {
-    max = array[i];
+    max = array[i];    //Нахождение максимального элемента в массиве.
   }
   else
 if (min > array[i])
   {
-    min = array[i];
+    min = array[i];    //Нахождение минимального элемента в массиве.
   }
   i++;
 }
-dif = max - min;
-dif = (Math.Round(dif, 1));
+dif = max - min;       //Вычисление разницы между максимумом и минимумом.
+dif = (Math.Round(dif, 1));  //Сокращение элементов после запятой до десятичной дроби.
 
-Console.WriteLine(dif);
+Console.WriteLine(dif);  //Вывод результата на экран.
