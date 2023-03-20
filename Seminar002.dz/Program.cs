@@ -32,15 +32,15 @@ int Prompt(string message)
   return result;
 }
 
-int number = Prompt("Введите трехзначное число > ");
+int number = Prompt("Введите трехзначное число:  ");
 if (number < 100 || number >= 1000)
 {
-  Console.WriteLine("Вы ввели не трехзначное число, пожалуйста повторите ввод");
+  Console.WriteLine("Вы ввели не трехзначное число, пожалуйста повторите ввод.");
   return;
 }
 Console.WriteLine($"Введенное число '{number}'");
-int secondRank = number / 10 % 10;
-Console.WriteLine($"Вторая цифра '{secondRank}'");
+int thirdRank = number % 10;
+Console.WriteLine($"Третья цифра '{thirdRank}'");
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
