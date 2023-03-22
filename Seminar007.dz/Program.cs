@@ -242,4 +242,4 @@ int column = Convert.ToInt32(Console.ReadLine());
 int[,] matrix = MatrixRandomNumber(row, column);
 PrintMatrix(matrix);
 double[] sumColumn = SumElementColumn(matrix);
-System.Console.WriteLine($"Среднее арифметическое каждого столбца {string.Join("  ", sumColumn)}");
+System.Console.WriteLine($"Среднее арифметическое каждого столбца {string.Join(";  ", sumColumn)}");
