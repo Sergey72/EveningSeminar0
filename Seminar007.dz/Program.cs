@@ -232,7 +232,7 @@ double[] SumElementColumn(int[,] array)
     arrSum[j] = sum/array.GetLength(0);
     arrSum[j] = (Math.Round(arrSum[j], 1));
   }
-  return arrSum; ;
+  return arrSum;
 }
 
 Console.Write("Введите кол-во строк: ");
