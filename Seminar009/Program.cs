@@ -24,31 +24,6 @@
 
 // ------------------------------------------------------------
 
-// Задача 64: Задайте значение N. Напишите программу, которая 
-// выведет все натуральные числа в промежутке от N до 1. 
-// Выполнить с помощью рекурсии.
-
-// N = 5 -> "5, 4, 3, 2, 1"
-// N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
-
-// void PrintNumberToN(int N)
-// {
-// if(N == 0)
-// {
-//   return;
-// }
-// PrintNumberToN(N - 1);
-// System.Console.Write($"{N} ");
-// }
-
-
-// System.Console.Write("Введите число: ");
-// int number = Convert.ToInt32(Console.ReadLine());
-// PrintNumberToN(number);
-
-
-// -----------------------------------------------------------
-
 // Задача 65: Задайте значения M и N. Напишите программу, 
 // которая выведет все натуральные числа в промежутке от M до N.
 // M = 1; N = 5 -> "1, 2, 3, 4, 5"
@@ -122,21 +97,21 @@
 // A = 3; B = 5 -> 243 (3⁵)
 // A = 2; B = 3 -> 8
 
-int Exponentiation(int A, int B)
-{
-  if (B == 0)
-  {
-    return 1;
-  }
+// int Exponentiation(int A, int B)
+// {
+//   if (B == 0)
+//   {
+//     return 1;
+//   }
   
-return A * Exponentiation(A, B - 1);
+// return A * Exponentiation(A, B - 1);
 
-}
+// }
 
 
-System.Console.Write("Введите число: ");
-int numberA = Convert.ToInt32(Console.ReadLine());
-System.Console.Write("Введите степень числа: ");
-int numberB = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine(Exponentiation(numberA, numberB));
-// Exponentiation(numberA, numberB);
+// System.Console.Write("Введите число: ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Введите степень числа: ");
+// int numberB = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine(Exponentiation(numberA, numberB));
+// // Exponentiation(numberA, numberB);
