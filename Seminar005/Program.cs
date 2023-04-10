@@ -78,42 +78,42 @@
 // 4; массив [6, 7, 19, 345, 3] -> нет
 // 3; массив [6, 7, 19, 345, 3] -> да
 
-int[] FillArray(int size)
-{
-  int[] array = new int[size];
-  Random rnd = new Random();
-  for (int i = 0; i < array.Length; i++)
-  {
-    array[i] = rnd.Next(0, 10);
-  }
-  return array;
-}
+// int[] FillArray(int size)
+// {
+//   int[] array = new int[size];
+//   Random rnd = new Random();
+//   for (int i = 0; i < array.Length; i++)
+//   {
+//     array[i] = rnd.Next(0, 100);
+//   }
+//   return array;
+// }
 
-Console.WriteLine("Введите размер массива: ");
-int size = Convert.ToInt32(Console.ReadLine());
-int[] arr = FillArray(size);
-System.Console.WriteLine($"[{string.Join(", ", arr)}]");
+// Console.WriteLine("Введите размер массива: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] arr = FillArray(size);
+// System.Console.WriteLine($"[{string.Join(", ", arr)}]");
 
-Console.WriteLine("Введите число для проверки: ");
-int checkNum = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число для проверки: ");
+// int checkNum = Convert.ToInt32(Console.ReadLine());
 
-bool isOk = false;
-for (int i = 0; i < arr.Length; i++)
-{
-  if (checkNum == arr[i])
-  {
-    isOk = true;
-    break;
-  }
-}
-if (isOk)
-{
-  Console.WriteLine($"Число {checkNum} есть в массиве.");
-}
-else
-{
-  Console.WriteLine($"Числа {checkNum} нет в массиве.");
-}
+// bool isOk = false;
+// for (int i = 0; i < arr.Length; i++)
+// {
+//   if (checkNum == arr[i])
+//   {
+//     isOk = true;
+//     break;
+//   }
+// }
+// if (isOk)
+// {
+//   Console.WriteLine($"Число {checkNum} есть в массиве.");
+// }
+// else
+// {
+//   Console.WriteLine($"Числа {checkNum} нет в массиве.");
+// }
 
 // Задача 35: Задайте одномерный массив из N случайных чисел.
 // Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
@@ -183,6 +183,8 @@ else
 // }
 
 // System.Console.WriteLine($"[{string.Join(", ", newArr)}]");
+
+// --------------------------------------------------------------
 
 // int[] FillArrayWhithRandomNumber(int size)
 // {
